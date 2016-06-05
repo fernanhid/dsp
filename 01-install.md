@@ -46,14 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I installed python 2 because it is still the most widely used version of python. It is also easier to learn python 2 and then learn python 3 instead of the other way around. 
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+You type python -V into the terminal and it tells you. In my case I have version 2.7.11 installed.
  
 
 
