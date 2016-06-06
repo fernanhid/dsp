@@ -29,11 +29,11 @@ What do the following commands do:
 `ls -Glp`  
 
 ls : list a files/directories <br>
-ls -a: display all files
-ls -l: display the long format listing
-ls -lh: shows sizes in human readable format
+ls -a: display all files <br>
+ls -l: display the long format listing<br>
+ls -lh: shows sizes in human readable format<br>
 ls -lah:  
-ls -t: displays newest files first
+ls -t: displays newest files first<br>
 ls -Glp
 ---
 
