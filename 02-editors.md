@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I used vim because it is usually the default in many systems. I want to feel confident that I can work on many computers. It also had a lot of intuitive tutorials online that gave me a basic handle of it. 
 
 --
 
@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> The graphical editor that I chose was sublime mostly because of the color coding that it offers and because of how intuitive it was when I used it to create modules. The colors are dictated by what coding language you choose; since I chose python, sublime changed the color of the code according to python syntax. 
+A useful shortcut is making blocks of code comments or not, that way you can test which part of the code works or not. Sublime also allows you to undo various shortcut commands instead of having to correct all of the code yourself.
  
