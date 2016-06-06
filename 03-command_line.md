@@ -28,7 +28,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-ls : list a files/directories 
+ls : list a files/directories \n
 ls -a: display all files
 ls -l: display the long format listing
 ls -lh: shows sizes in human readable format
