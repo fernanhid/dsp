@@ -28,8 +28,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+ls : list a files/directories 
+ls -a: display all files
+ls -l: display the long format listing
+ls -lh: shows sizes in human readable format
+ls -lah:  
+ls -t: displays newest files first
+ls -Glp
 ---
 
 ###Q3.  More List Files in Unix  
