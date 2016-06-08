@@ -4,7 +4,7 @@ Before you start, please take 15 minutes to [Try Git](https://try.github.io/leve
 
 #### Git and GitHub  
 
-Let's clear up something first.  
+Let's clear up something first  
 
 **Git** is a system for version control. It runs at the command line on your local machine and allows you to keep track of your files and modifications in a "repository". 
 
