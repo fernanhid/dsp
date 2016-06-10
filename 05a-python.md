@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-Python lists and tuples are similar in that they sequence objects however tuples are immutable meaning that they cannot be changed. This allows them to be used as keys in dictionary because it prevents hashing problems, since a list can be changed it could potentially cause problems in hashing a dictionary. 
+>Python lists and tuples are similar in that they sequence objects however tuples are immutable meaning that they cannot >be changed. This allows them to be used as keys in dictionary because it prevents hashing problems, since a list can be >changed it could potentially cause problems in hashing a dictionary. 
 
 ---
 
