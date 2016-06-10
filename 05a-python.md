@@ -22,9 +22,9 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >Python lists, sets, and tuples are ways to sequence objects.
 >What makes a set different is: 
->1. It doesn't contain any duplicate objects 
->2. It is unordered 
->3. It can only contain immutable objects, therefore it's hashable
+1. It doesn't contain any duplicate objects 
+2. It is unordered 
+3. It can only contain immutable objects, therefore it's hashable
 >
 >Because a set is hashable, selecting an object in a set is faster than a list. 
 
