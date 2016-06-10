@@ -35,15 +35,15 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`. <br>
 
->>Python's lambda function creates an anonymous one time function. They are used as a time saving and concise method of >>embedding functions in other functions without creating a function in the long form. <br>
-
-1. 
->>data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]
->>sorted(data, key = lambda name: name[2]) <br>
->>[('Jarod', 'Lanier'), ('Ann', 'Makosinski'), ('Josh', 'Waitzkin')] <br>
-
-2. 
->>df.column.apply(lambda x: upper(x))<br>
+>Python's lambda function creates an anonymous one time function. They are used as a time saving and concise method of embedding functions in other functions without creating a function in the long form. <br>
+>
+>1. <br> 
+>data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]
+>sorted(data, key = lambda name: name[2]) <br>
+>[('Jarod', 'Lanier'), ('Ann', 'Makosinski'), ('Josh', 'Waitzkin')] <br>
+>
+>2. <br>
+>df.column.apply(lambda x: upper(x))<br>
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
