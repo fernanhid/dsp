@@ -21,9 +21,9 @@ Python lists and tuples are similar in that they sequence objects however tuples
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 Python lists, sets, and tuples are ways to sequence objects.<br>
-What makes sets different is:
-1. They don't contain any duplicate objects 
-2. They are unordered
+What makes a set different is: <br>
+1. It doesn't contain any duplicate objects 
+2. It is unordered 
 3. It can only contain immutable objects, therefore it's hashable
 
 Because a set is hashable, selecting an object in a set is faster than a list. 
@@ -34,15 +34,15 @@ Because a set is hashable, selecting an object in a set is faster than a list.
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`. <br>
 
-Python's lambda function creates an anonymous one time function. They are used as a time saving and concise method of embedding functions in other functions without creating a function in the long form. <br>
+>>Python's lambda function creates an anonymous one time function. They are used as a time saving and concise method of >>embedding functions in other functions without creating a function in the long form. <br>
 
 1. 
-data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
-sorted(data, key = lambda name: name[2]) <br>
-[('Jarod', 'Lanier'), ('Ann', 'Makosinski'), ('Josh', 'Waitzkin')] <br>
+>>data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]
+>>sorted(data, key = lambda name: name[2]) <br>
+>>[('Jarod', 'Lanier'), ('Ann', 'Makosinski'), ('Josh', 'Waitzkin')] <br>
 
 2. 
-df.column.apply(lambda x: upper(x))<br>
+>>df.column.apply(lambda x: upper(x))<br>
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
@@ -59,7 +59,11 @@ last_names = [name[1] for name in data if len(name[0] >3)] <br>
 
 Just from the lenght of the code you can see that list comprehensions are far more concise and readable than using map and filter functions. <br>
 
+Set Example: <br>
 
+
+Dictionary Comprehension: <br>
+{name[1]: name[0] for name in data}<br>
 ---
 
 ###Complete the following problems by editing the files below:
