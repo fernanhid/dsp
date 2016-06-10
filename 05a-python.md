@@ -42,8 +42,8 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >sorted(data, key = lambda name: name[2]) <br>
 >[('Jarod', 'Lanier'), ('Ann', 'Makosinski'), ('Josh', 'Waitzkin')] <br>
 >
->2. <br>
->df.column.apply(lambda x: upper(x))<br>
+> 2. <br>
+> df.column.apply(lambda x: upper(x)) <br>
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
