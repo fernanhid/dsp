@@ -49,21 +49,25 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-List comprehensions are one liners that allows you to make lists from a previous sequences of objects. <br>
+>List comprehensions are one liners that allows you to make lists from a previous sequences of objects. <br>
+>
+>Ex: <br>
+>1. data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
+>last_names = [name[1] for name in data if len(name[0] >3)] <br>
+>
+>2. map(lambda name: name[1], filter(lambda name: len(name[0]) > 3, data))<br>
+>
+>Just from the lenght of the code you can see that list comprehensions are far more concise and readable than using map and filter functions. <br>
+>
+>Set Example: <br>
+>{number for number in [1,1,1,2,3,4,4,4]} <br>
+>{1, 2, 3, 4}
+>
+>Dictionary Comprehension: <br>
+>{name[1]: name[0] for name in data}<br>
+>{'Lanier': 'Jarod', 'Makosinski': 'Ann', 'Waitzkin': 'Josh'}
 
-Ex: <br>
-1. data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
-last_names = [name[1] for name in data if len(name[0] >3)] <br>
 
-2. map(lambda name: name[1], filter(lambda name: len(name[0]) > 3, data))<br>
-
-Just from the lenght of the code you can see that list comprehensions are far more concise and readable than using map and filter functions. <br>
-
-Set Example: <br>
-
-
-Dictionary Comprehension: <br>
-{name[1]: name[0] for name in data}<br>
 ---
 
 ###Complete the following problems by editing the files below:
