@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python lists and tuples are similar in that they sequence objects however tuples are immutable meaning that they cannot be changed. This allows them to be used as keys in dictionary because it prevents hashing problems, since a list can be changed it could potentially cause problems in hashing a dictionary. 
 
 ---
 
@@ -20,23 +20,45 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python lists, sets, and tuples are ways to sequence objects.<br>
+What makes sets different is:
+1. They don't contain any duplicate objects 
+2. They are unordered
+3. It can only contain immutable objects, therefore it's hashable
+
+Because a set is hashable, selecting an object in a set is faster than a list. 
 
 ---
 
 ###Q3. Lambda Function
 
-Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
+Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`. <br>
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python's lambda function creates an anonymous one time function. They are used as a time saving and concise method of embedding functions in other functions without creating a function in the long form. <br>
 
+1. 
+data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
+sorted(data, key = lambda name: name[2]) <br>
+[('Jarod', 'Lanier'), ('Ann', 'Makosinski'), ('Josh', 'Waitzkin')] <br>
+
+2. 
+df.column.apply(lambda x: upper(x))<br>
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions are one liners that allows you to make lists from a previous sequences of objects. <br>
+
+Ex: <br>
+1. data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
+last_names = [name[1] for name in data if len(name[0] >3)] <br>
+
+2. map(lambda name: name[1], filter(lambda name: len(name[0]) > 3, data))<br>
+
+Just from the lenght of the code you can see that list comprehensions are far more concise and readable than using map and filter functions. <br>
+
 
 ---
 
