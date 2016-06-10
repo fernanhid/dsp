@@ -149,6 +149,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    
+    not_order = s.find('not')
+    bad_order = s.find('bad')
+    
+    if (not_order < bad_order) == True:
+        return s[:not_order] + 'good' + s[bad_order+ 3:]
+    else: 
+        return s
     raise NotImplementedError
 
 
