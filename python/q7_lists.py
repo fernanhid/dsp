@@ -7,7 +7,6 @@ def match_ends(words):
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
     of the string are the same.
-
     >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
     3
     >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
@@ -15,6 +14,8 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
+    return len([objt for objt in words if len(objt)>= 2 and objt[0] == objt[-1]])
+
     raise NotImplementedError
 
 
@@ -32,6 +33,11 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    
+    x_words = sorted([word for word in words if word[0] == 'x'])
+    other_words = sorted([word for word in words if word[0] != 'x'])
+    
+    return x_words + other_words
     raise NotImplementedError
 
 
@@ -49,6 +55,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    
+    return sorted(tuples, key = lambda x: x[1])
     raise NotImplementedError
 
 
@@ -85,4 +93,35 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
+    lst = []
+    count = 0
+    for num in nums:
+        if len(lst) == 0:
+            lst.append(num)
+        else:
+            if lst[count] == num:
+                pass
+            else:
+                lst.append(num)
+                count += 1
+    
+    return lst
+    
+    
+def linear_merge(list1, list2):
+    """
+    Given two lists sorted in increasing order, create and return a
+    merged list of all the elements in sorted order. You may modify
+    the passed in lists. Ideally, the solution should work in "linear"
+    time, making a single pass of both lists.
+
+    >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
+    ['aa', 'bb', 'cc', 'xx', 'zz']
+    >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
+    ['aa', 'bb', 'cc', 'xx', 'zz']
+    >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
+    ['aa', 'aa', 'aa', 'bb', 'bb']
+    """
+    
+    return sorted(list1+list2)
     raise NotImplementedError
