@@ -22,6 +22,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >Python lists, sets, and tuples are ways to sequence objects.<br>
 >What makes a set different is: <br>
+>
 >1. It doesn't contain any duplicate objects <br>
 >2. It is unordered <br>
 >3. It can only contain immutable objects, therefore it's hashable <br>
@@ -51,11 +52,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >List comprehensions are one liners that allows you to make lists from a previous sequences of objects. <br>
 >
->Ex: <br>
->1. data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
+>List Comprehension Ex: <br>
+>* data = [('Jarod', 'Lanier'), ('Josh', 'Waitzkin'), ('Ann', 'Makosinski')]<br>
 >last_names = [name[1] for name in data if len(name[0] >3)] <br>
 >
->2. map(lambda name: name[1], filter(lambda name: len(name[0]) > 3, data))<br>
+>Map & Filter Example: <br>
+>* map(lambda name: name[1], filter(lambda name: len(name[0]) > 3, data))<br>
 >
 >Just from the lenght of the code you can see that list comprehensions are far more concise and readable than using map and filter functions. <br>
 >
