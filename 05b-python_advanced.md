@@ -66,20 +66,20 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
-import pandas as pd <br>
-data = pd.read_csv('faculty.csv', skipinitialspace = True)<br>
-data['last_name'] = data.name.apply(lambda x: x.split()[-1])<br>
-last_names = set(data.last_name)<br>
+>import pandas as pd <br>
+>data = pd.read_csv('faculty.csv', skipinitialspace = True)<br>
+>data['last_name'] = data.name.apply(lambda x: x.split()[-1])<br>
+>last_names = set(data.last_name)<br>
 
-q6_data = data[['degree', 'title', 'email', 'last_name']]<br>
+>q6_data = data[['degree', 'title', 'email', 'last_name']]<br>
 
-name_dict = {}<br>
-for name in last_names:<br>
-    x = data[data.last_name == name]<br>
-    for index, row in x.iterrows():<br>
-        name_dict.setdefault(row['last_name'], []).append(row[['degree', 'title', 'email']].tolist())<br>
+>name_dict = {}<br>
+>for name in last_names:<br>
+>    x = data[data.last_name == name]<br>
+>    for index, row in x.iterrows():<br>
+>        name_dict.setdefault(row['last_name'], []).append(row[['degree', 'title', 'email']].tolist())<br>
                                                    
-name_dict.items()[:3]<br>
+>name_dict.items()[:3]<br>
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -98,8 +98,10 @@ Print the first 3 key and value pairs of the dictionary:
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> REPLACE THIS WITH YOUR RESPONSE
-
+[('Bellamy',[['Sc.D.','Associate Professor of Biostatistics','bellamys@mail.med.upenn.edu']]),<br>
+ ('Bilker', [['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']]),<br>
+ ('Bryan', [['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']])] <br>
+ 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
 >import pandas as pd<br>
