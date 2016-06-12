@@ -66,7 +66,20 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+import pandas as pd <br>
+data = pd.read_csv('faculty.csv', skipinitialspace = True)<br>
+data['last_name'] = data.name.apply(lambda x: x.split()[-1])<br>
+last_names = set(data.last_name)<br>
+
+q6_data = data[['degree', 'title', 'email', 'last_name']]<br>
+
+name_dict = {}<br>
+for name in last_names:<br>
+    x = data[data.last_name == name]<br>
+    for index, row in x.iterrows():<br>
+        name_dict.setdefault(row['last_name'], []).append(row[['degree', 'title', 'email']].tolist())<br>
+                                                   
+name_dict.items()[:3]<br>
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -76,7 +89,12 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>import pandas as pd <br>
+>data = pd.read_csv('faculty.csv', skipinitialspace = True) <br>
+>data['name_format'] = data.name.apply(lambda x: (x.split()[0], x.split()[-1])) <br>
+
+>q7_dict = data[['degree', 'title', 'email', 'name_format']].set_index('name_format').T.to_dict('list') <br>
+>q7_dict.items()[:3] <br>
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
@@ -84,7 +102,12 @@ Print the first 3 key and value pairs of the dictionary:
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
---- 
+>import pandas as pd<br>
+>data = pd.read_csv('faculty.csv', skipinitialspace = True)<br>
+>data['last_name_format'] = data.name.apply(lambda x: (x.split()[-1], x.split()[0]))<br>
+
+>q8_dict = data[['degree', 'title', 'email', 'last_name_format']].set_index('last_name_format').T.to_dict('list')<br>
+>q8_dict.items()[:3]<br>
 
 If you're all done and looking for an extra challenge, then try the below problem:  
 
