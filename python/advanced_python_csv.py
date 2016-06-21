@@ -1,1 +1,1 @@
-PLACE YOUR CODE HERE
+data.email.to_csv('email.csv')
