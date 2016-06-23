@@ -74,7 +74,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >The Probability he was an identical twin is 14.7% <br>
 <br>
 >The probability of being a twin in the total population is:<br>
->1/300+1/125 = 17/1500
+>1/300+1/125 = 17/1500<br>
 >The probability of being a male identical twin is: <br>
 >1/300 % .5 = 1/600<br>
 <br>
