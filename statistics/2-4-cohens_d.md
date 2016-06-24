@@ -6,13 +6,12 @@
 >first_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord == 1].totalwgt_lb.mean() <br>
 >first_babies_mean <br>
 >result:7.201094430437772 <br>
->other_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb.mean()<br>
+>other_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb.mean()/n
 >other_babies_mean<br>
 >result: 7.325855614973262<br>
 >birth_order_x_weight.totalwgt_lb.mean()<br>
 >result: 7.265628457623368<br>
-<br>
->The first babies are lighter than the other babies by an average of around .1 pounds. That's 1.6% of the average weight of all babies.<br>
+>>The first babies are lighter than the other babies by an average of around .1 pounds. That's 1.6% of the average weight of all babies.<br>
 <br>
 >first_babies = birth_order_x_weight[birth_order_x_weight.birthord == 1].totalwgt_lb<br>
 >other_babies = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb<br>
@@ -34,6 +33,7 @@
 <br>
 >CohenEffectSize(other_babies, first_babies)<br>
 >result: 0.08867236333202932<br>
-<br>
->The difference between the baby weights is .08 standard deviations which is low. So there is not much difference.
+>>The difference between the baby weights is .08 standard deviations which is low. So there is not much difference.
 
+>Overall Results:<br>
+> By looking at both Cohen's D and means of baby weights, the difference between the weights of the first babies and the other babies is not significant. 
