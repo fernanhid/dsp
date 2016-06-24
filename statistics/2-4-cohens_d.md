@@ -6,7 +6,7 @@
 >first_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord == 1].totalwgt_lb.mean() <br>
 >first_babies_mean <br>
 >result:7.201094430437772 <br>
->other_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb.mean()/n
+>other_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb.mean()\n
 >other_babies_mean<br>
 >result: 7.325855614973262<br>
 >birth_order_x_weight.totalwgt_lb.mean()<br>
