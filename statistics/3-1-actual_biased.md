@@ -4,7 +4,7 @@ import chap01soln<br>
 resp = chap01soln.ReadFemResp()<br>
 <br>
 distribution = defaultdict(int)<br>
-    for value in resp.numkdhh:<br>
+   		for value in resp.numkdhh:<br>
     distribution[value]+=1<br>
 <br>
 distribution<br>
