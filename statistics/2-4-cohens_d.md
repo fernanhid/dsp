@@ -27,7 +27,6 @@
 >import math<br>
 <br>
 <p style="text-indent: 5em;">
-
 >def CohenEffectSize(group1, group2):<br>
 >     diff = group1.mean() - group2.mean()<br>
 >     var1 = group1.var()<br>
@@ -36,7 +35,7 @@
 >     pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)<br>
 >     d = diff / math.sqrt(pooled_var)<br>
 >     return d<br>
-<p>
+</p>
 <br>
 >CohenEffectSize(other_babies, first_babies)<br>
 >result: 0.08867236333202932<br>
