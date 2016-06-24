@@ -1,8 +1,8 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
-import chap01soln<br>
-resp = chap01soln.ReadFemResp()<br>
-<br>
+<pre>import chap01soln
+resp = chap01soln.ReadFemResp()
+
 unbiased_pmf = thinkstats2.Pmf(resp.numkdhh)<br>
 def BiasPmf(pmf, label):
     new_pmf = pmf.Copy(label=label)
@@ -22,3 +22,5 @@ unbiased_pmf
 
 pmf_bias 
 {0: 0.0, 1: 0.20899335717935616, 2: 0.38323965252938175, 3: 0.25523760858456823, 4: 0.10015329586101177, 5: 0.052376085845682166}
+
+</pre>
