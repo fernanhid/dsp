@@ -25,7 +25,6 @@
 >Cohen's D:<br>
 <br>
 >import math<br>
-<pre>
 >def CohenEffectSize(group1, group2):<br>
 >     diff = group1.mean() - group2.mean()<br>
 <br>
@@ -36,11 +35,10 @@
 >     pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)<br>
 >     d = diff / math.sqrt(pooled_var)<br>
 >     return d<br>
-><pre>
 <br>
 >CohenEffectSize(other_babies, first_babies)<br>
 >result: 0.08867236333202932<br>
 >The difference between the baby weights is .08 standard deviations which is low. So there is not much difference.
-
->####Overall Results:<br>
->####When using Cohen's D and baby weight means as measures of difference, they reveal that the difference are not significant, and the weights are very close together. 
+<br>
+><pre>Overall Results:<br>
+>When using Cohen's D and baby weight means as measures of difference, they reveal that the difference are not significant, and the weights are very close together. 
