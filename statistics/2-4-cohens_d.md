@@ -16,7 +16,9 @@
 <br>
 >first_babies = birth_order_x_weight[birth_order_x_weight.birthord == 1].totalwgt_lb<br>
 >other_babies = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb<br>
->Cohen's D<br>
+<br>
+<br>
+>Cohen's D:<br>
 <br>
 >import math<br>
 >def CohenEffectSize(group1, group2):<br>
@@ -30,6 +32,8 @@
 >    d = diff / math.sqrt(pooled_var)<br>
 >    return d<br>
 <br>
->CohenEffectSize(first_babies, other_babies)<br>
->result: --0.08867236333202932<br>
+>CohenEffectSize(other_babies, first_babies)<br>
+>result: 0.08867236333202932<br>
+<br>
+>The difference between the baby weights is .08 standard deviations which is low. So there is not much difference.
 
