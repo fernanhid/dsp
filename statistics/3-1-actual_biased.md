@@ -3,9 +3,22 @@
 import chap01soln<br>
 resp = chap01soln.ReadFemResp()<br>
 <br>
-distribution = defaultdict(int)<br>
-   		for value in resp.numkdhh:<br>
-    distribution[value]+=1<br>
-<br>
-distribution<br>
-{0: 3563, 1: 1636, 2: 1500, 3: 666, 4: 196, 5: 82}
+pmf = thinkstats2.Pmf(resp.numkdhh)<br>
+def BiasPmf(pmf, label):
+    new_pmf = pmf.Copy(label=label)
+
+    for x, p in pmf.Items():
+        new_pmf.Mult(x, x)
+        
+    new_pmf.Normalize()
+    return new_pmf
+    
+pmf_bias = BiasPmf(pmf, 'biased')
+
+
+The 
+pmf
+{0: 0.46617820227659301, 1: 0.21405207379301322, 2: 0.19625801386889966, 3: 0.087138558157791451, 4: 0.025644380478869556, 5: 0.010728771424833181}
+
+pmf_bias 
+{0: 0.0, 1: 0.20899335717935616, 2: 0.38323965252938175, 3: 0.25523760858456823, 4: 0.10015329586101177, 5: 0.052376085845682166}
