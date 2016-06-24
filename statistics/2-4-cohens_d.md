@@ -43,4 +43,4 @@
 <br>
 ><pre>Overall Results:<br>
 >When using Cohen's D and baby weight means as measures of difference, they reveal <br>
-that the difference between the baby weights are not significant.
+that the difference between the baby weights is not significant.
