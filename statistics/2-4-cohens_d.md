@@ -25,6 +25,7 @@
 >Cohen's D:<br>
 <br>
 >import math<br>
+<pre>
 >def CohenEffectSize(group1, group2):<br>
 >     diff = group1.mean() - group2.mean()<br>
 <br>
