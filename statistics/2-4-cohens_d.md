@@ -41,4 +41,5 @@
 >The difference between the baby weights is .08 standard deviations which is low. So there is not much difference.
 <br>
 ><pre>Overall Results:<br>
->When using Cohen's D and baby weight means as measures of difference, they reveal that the difference are not significant, and the weights are very close together. 
+>When using Cohen's D and baby weight means as measures of difference, they reveal <br>
+that the difference between the baby weights are not significant.
