@@ -3,7 +3,7 @@
 import chap01soln<br>
 resp = chap01soln.ReadFemResp()<br>
 <br>
-pmf = thinkstats2.Pmf(resp.numkdhh)<br>
+unbiased_pmf = thinkstats2.Pmf(resp.numkdhh)<br>
 def BiasPmf(pmf, label):
     new_pmf = pmf.Copy(label=label)
 
@@ -16,8 +16,8 @@ def BiasPmf(pmf, label):
 pmf_bias = BiasPmf(pmf, 'biased')
 
 
-The 
-pmf
+ 
+unbiased_pmf
 {0: 0.46617820227659301, 1: 0.21405207379301322, 2: 0.19625801386889966, 3: 0.087138558157791451, 4: 0.025644380478869556, 5: 0.010728771424833181}
 
 pmf_bias 
