@@ -11,7 +11,7 @@
 >result: 7.325855614973262<br>
 >birth_order_x_weight.totalwgt_lb.mean()<br>
 >result: 7.265628457623368<br>
->>The first babies are lighter than the other babies by an average of around .1 pounds. That's 1.6% of the average weight >>of all babies.<br>
+>>#The first babies are lighter than the other babies by an average of around .1 pounds. That's 1.6% of the average weight of all babies.<br>
 <br>
 >first_babies = birth_order_x_weight[birth_order_x_weight.birthord == 1].totalwgt_lb<br>
 >other_babies = birth_order_x_weight[birth_order_x_weight.birthord != 1].totalwgt_lb<br>
