@@ -21,7 +21,7 @@
 <br>
 >import math<br>
 >def CohenEffectSize(group1, group2):<br>
->    diff = group1.mean() - group2.mean()<br>
+> <pre> diff = group1.mean() - group2.mean()<br>
 <br>
 >    var1 = group1.var()<br>
 >    var2 = group2.var()<br>
