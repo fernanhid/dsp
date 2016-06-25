@@ -10,16 +10,16 @@ Is the distribution uniform?
 <b>Code </b>
 import random
 
-<i>Create a list of random numbers</i>
+<i>#Create a list of random numbers</i>
 random_list = []
 for i in range(1000):
     random_list.append(random.random())
 
-<i>Calculate the distribution functions of the random numbers</i>
+<i>#Calculate the distribution functions of the random numbers</i>
 random_pmf = thinkstats2.Pmf(random_list)
 random_cdf = thinkstats2.Cdf(random_list)
 
-<i>Plotting</i>
+<i>#Plotting</i>
 thinkplot.PrePlot(2)
 thinkplot.Pmfs([random_cdf, random_pmf])
 thinkplot.Show()
