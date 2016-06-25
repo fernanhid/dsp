@@ -27,7 +27,7 @@ for value in resp.numkdhh:
     
 unbiased_dist = dict(unbiased_dist)
 
-<i>#Creating an Unbiased to Biased Function</i>
+<i>#Creating a Biased Distribution</i>
 def to_bias(unbiased_dist):
     bias = unbiased_dist.copy()
     
