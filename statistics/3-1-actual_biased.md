@@ -28,6 +28,17 @@ unbiased_pmf
 bias_dist:
 {0: 0, 1: 1636, 2: 3000, 3: 1998, 4: 784, 5: 410}
 
+<b>Mean</b>
+<i>mean of biased_distributions</i>
+sum(to_bias(bias_dist).values())/float(sum(bias_dist.values()))
+2.4036791006642821
+
+<i>mean of unbiased distributions</i>
+sum(to_bias(unbiased_dist).values())/float(sum(unbiased_dist.values()))
+1.0242051550438309
+
+
+<b> Graph </b>
 
 
 </pre>
