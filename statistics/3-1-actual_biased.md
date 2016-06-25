@@ -1,18 +1,33 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
 <pre>
+<b>Problem</b>
+Something like the class size paradox appears if you survey children and ask 
+how many children are in their family. Families with many children are more 
+likely to appear in your sample, and families with no children have no chance 
+to be in the sample.
+Use the NSFG respondent variable NUMKDHH to construct the actual distribution
+for the number of children under 18 in the household.
+Now compute the biased distribution we would see if we surveyed the children
+and asked them how many children under 18 (including themselves) are in their 
+household.
+Plot the actual and biased distributions, and compute their means.
+
 <b>Code </b>
 from collections import defaultdict
 
+<i>#Import Data</i>
 import chap01soln
 resp = chap01soln.ReadFemResp()
 
+<i>#Creating an Unbiased Distribution</i>
 unbiased_dist = defaultdict(int)
 for value in resp.numkdhh:
     unbiased_dist[value]+=1
     
 unbiased_dist = dict(unbiased_dist)
 
+<i>#Creating an Unbiased to Biased Function</i>
 def to_bias(unbiased_dist):
     bias = unbiased_dist.copy()
     
@@ -29,8 +44,8 @@ unbiased_pmf
 bias_dist:
 {0: 0, 1: 1636, 2: 3000, 3: 1998, 4: 784, 5: 410}
 
-<b>Mean</b>
-<i>mean of biased_distributions</i>
+<b>Means of Distributions</b>
+<i>#mean of biased_distributions</i>
 sum(to_bias(bias_dist).values())/float(sum(bias_dist.values()))
 2.4036791006642821
 
