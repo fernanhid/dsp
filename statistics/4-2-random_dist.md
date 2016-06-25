@@ -1,7 +1,7 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
 <pre>
-<b>Code </br>
+<b>Code </b>
 import random
 
 random_list = []
@@ -18,5 +18,5 @@ thinkplot.Show()
 <b>Graph</b>
 
 
-##<b>Intuitions </b>
+#<b>Intuitions </b>
 </pre>
