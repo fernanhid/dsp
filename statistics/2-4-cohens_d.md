@@ -22,10 +22,13 @@ other_babies_mean = birth_order_x_weight[birth_order_x_weight.birthord != 1].tot
 other_babies_mean
 result: 7.325855614973262
 
+<i>#Mean of all Babies</i>
 birth_order_x_weight.totalwgt_lb.mean()
 result: 7.265628457623368
 
-The first babies are lighter than the other babies by an average of around .1 pounds. That's 1.6% of the average weight of all babies.
+<b>Conclusion from Means:</b>
+The first babies are lighter than the other babies by an average of around .1 pounds. 
+That's 1.6% of the average weight of all babies.
 
 <i>#Calculating Cohen's D</i>
 first_babies = birth_order_x_weight[birth_order_x_weight.birthord == 1].totalwgt_lb
