@@ -18,5 +18,6 @@ thinkplot.Show()
 <b>Graph</b>
 
 
-#<b>Intuitions </b>
+<b>Intuition </b>
+The distribution is uniform since in the visualization of the probability mass function the likelihood of each point is equal at .1%. This also means that the slope of the cumulative distribution function close to zero, which it is. These two point to the conclusion that the points are indeed random.  
 </pre>
