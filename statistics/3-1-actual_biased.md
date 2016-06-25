@@ -55,7 +55,7 @@ sum(to_bias(unbiased_dist).values())/float(sum(unbiased_dist.values()))
 
 
 <b>Graph </b>
-
+<img src="q2_image.png" alt="Graph" style="width:304px;height:228px;">
 
 
 <b>Intuition </b>
