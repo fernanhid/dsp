@@ -87,8 +87,11 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 How do frequentist and Bayesian statistics compare?
 
 <pre>
-Frequentist statistics views data as long run frequencies with which events occur, therefore, the data is seen as a  repeatable random sample. These long run frequencies assumes that the underlying parameters are fixed. 
-Bayesian statistics on the other hand, treats the data as fixed and derives the underlying parameters probabilisticly making the world updateable. 
+Frequentist statistics views data as long run frequencies with which events occur, therefore, 
+the data is seen as a  repeatable random sample. These long run frequencies assumes that the 
+underlying parameters are fixed. 
+Bayesian statistics on the other hand, treats the data as fixed and derives the underlying 
+parameters probabilisticly making the world updateable. 
 </pre>
 ---
 
