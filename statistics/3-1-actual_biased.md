@@ -38,7 +38,14 @@ sum(to_bias(unbiased_dist).values())/float(sum(unbiased_dist.values()))
 1.0242051550438309
 
 
-<b> Graph </b>
+<b>Graph </b>
 
+
+
+<b>Intuition </b>
+The unbiased distribution of the number of children under 18 in a household has a lower 
+mean than the biased one since the households with zero children and ignored in the biased
+distributions. You can clearly see this in the graph, where household with no children make 
+up most households in the unbiased distributions but none in the biased ones. 
 
 </pre>
