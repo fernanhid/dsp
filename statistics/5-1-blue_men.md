@@ -25,6 +25,6 @@ below_high_point-below_low_point
 0.34274683763147368
 
 <b>Solution</b>
-34.27% of the U.S male populations are eligible to join the Blue Man Group
+34.27% of the U.S male population is eligible to join the Blue Man Group.
 
 </pre>
