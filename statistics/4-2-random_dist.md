@@ -25,7 +25,7 @@ thinkplot.Pmfs([random_cdf, random_pmf])
 thinkplot.Show()
 
 <b>Graph</b>
-
+<img src="q3_image.png", style="width:304px;height:228px;">
 
 <b>Intuition </b>
 The distribution is uniform since in the visualization of the probability 
