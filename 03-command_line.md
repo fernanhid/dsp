@@ -64,7 +64,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Xargs takes in and input and executes your chosen command on it. What makes
+it powerful is that with xargs you can run multiple commands in one line. 
+Here is an example:
+find . -name '*.ipyn' | xargs grep -L '^import'
 
- 
+Here xargs helps us find all the ipython notebooks that have the word import all in one line (which we can assume there are many). 
+
 
